@@ -1,0 +1,11 @@
+[Unit]
+Description=Execute actions in guest over VM channel (guest component)
+
+[Service]
+Type=simple
+User=root
+Group=root
+ExecStart=/usr/bin/vmobey --verbose
+
+[Install]
+WantedBy=multi-user.target
